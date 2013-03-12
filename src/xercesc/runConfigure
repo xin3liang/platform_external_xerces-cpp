@@ -517,8 +517,8 @@ if test $bitsToBuild = 64; then
         esac
     fi
 elif test $bitsToBuild = 32; then
-    bitstobuildDefines=" "
-    bitstobuildLink=" "
+    bitstobuildDefines=" $bitstobuildDefines -m32 "
+    bitstobuildLink=" -m32 "
 # following doesn't work for all versions of gcc    
 #    if test $platform; then
 #        case $platform in
