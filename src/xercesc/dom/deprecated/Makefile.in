@@ -193,6 +193,7 @@ depend:: includes
 clean::
 	@echo "Making clean in $(MODULE)/$(SUBMODULE) ..."
 	$Q$(RM2) $(addprefix $(XML_OBJ_DEPDOM_DIR)/,$(DOM_DEPRECATED_CPP_OBJECTS))
+	$Q$(RM2) $(addprefix $(XML_OBJ_DIR)/,$(DOM_DEPRECATED_CPP_OBJECTS))
 
 distclean:: clean
 	$(RM) Makefile $(DEPFILE)
